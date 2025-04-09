@@ -1,0 +1,73 @@
+﻿.container {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+    .profile-info img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    .profile-info label {
+        display: block;
+        font-size: 18px;
+        margin: 10px 0;
+        color: #333;
+    }
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+    .btn-edit:hover {
+        background-color: #45a049;
+    }
+
+.btn-save {
+    background-color: #4CAF50; /* 绿色背景 */
+    color: white; /* 白色文字 */
+}
+
+    .btn-save:hover {
+        background-color: #45a049; /* 悬停时变成更深的绿色 */
+    }
+
+/* 取消按钮的样式 */
+.btn-cancel {
+    background-color: #f44336; /* 红色背景 */
+    color: white; /* 白色文字 */
+}
+
+    .btn-cancel:hover {
+        background-color: #e53935; /* 悬停时变成更深的红色 */
+    }
+
+.btn-return {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}

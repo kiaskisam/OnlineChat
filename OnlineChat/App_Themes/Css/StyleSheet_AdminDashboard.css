@@ -1,0 +1,12 @@
+﻿/* 使容器使用 flex 布局 */
+.grid-container {
+    display: flex; /* 启用 Flexbox 布局 */
+    justify-content: space-between; /* 水平对齐，间隔自动 */
+    gap: 20px; /* 两个表格之间的间距 */
+}
+
+/* 设置每个 GridView 的宽度 */
+.grid-view {
+    flex: 1; /* 宽度自适应，两个表格均分空间 */
+    margin: 0; /* 去掉外边距 */
+}

@@ -1,0 +1,112 @@
+﻿/* 设置 HTML 和 BODY 的高度 */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: flex-start; /* 内容垂直对齐方式：置顶 */
+    align-items: center; /* 水平居中 */
+    height: 100vh; /* 使 body 高度为视口高度 */
+    padding-top: 20px; /* 页面顶部距离，可以根据需要调整 */
+    box-sizing: border-box; /* 确保 padding 不会影响整体高度 */
+}
+
+/* 左下角头像框样式 */
+.profile-picture {
+    position: fixed; /* 使用固定定位 */
+    bottom: 20px; /* 离页面底部 20px */
+    left: 20px; /* 离页面左边 20px */
+    width: 50px; /* 头像宽度 */
+    height: 50px; /* 头像高度 */
+    border-radius: 50%; /* 圆形头像 */
+    overflow: hidden; /* 确保头像不超出边界 */
+    display: flex;
+    flex-direction: column; /* 垂直排列头像和按钮 */
+    align-items: center; /* 水平居中头像和按钮 */
+    justify-content: center; /* 垂直居中头像和按钮 */
+    gap: 10px; /* 设置头像和按钮之间的间距 */
+}
+
+    /* 头像图片样式 */
+    .profile-picture img {
+        width: 100%; /* 头像自适应宽度 */
+        height: 100%; /* 头像自适应高度 */
+        object-fit: cover; /* 确保头像按比例缩放并覆盖区域 */
+        cursor: pointer; /* 鼠标悬停时显示为可点击 */
+    }
+
+
+/* 容器 */
+.container {
+    width: 60%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-group input, .form-group select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .form-group select {
+        background-color: #fff;
+    }
+
+.btn-create {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+    .btn-create:hover {
+        background-color: #45a049;
+    }
+
+.btn-cancel {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+    .btn-cancel:hover {
+        background-color: #e53935;
+    }
+
+.private-id, .max-participants {
+    display: none; /* Initially hidden */
+}
